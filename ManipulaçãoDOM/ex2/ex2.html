@@ -1,0 +1,25 @@
+<!--Crie uma página HTML simples contendo um botão, depois crie um
+arquivo javascript contendo uma função addImagem() que deve
+ser vinculado ao onclick do botão. Ao clicar no botão deve ser
+adicionado uma imagem qualquer na tela.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addImagem()">Clica Abestado</button>
+
+    <script>
+      function addImagem() {
+        var imagem = document.createElement("IMG");
+        imagem.src = "https://conteudo.imguol.com.br/c/noticias/2014/09/30/comediante-e-deputado-federal-tiririca-pr-sp-1412101756570_300x300.jpg";
+        document.body.appendChild(imagem);
+      }
+    </script>
+</body>
+</html>
